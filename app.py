@@ -6,7 +6,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Load your data from the CSV file
-data = pd.read_csv("server\processedData.csv", encoding='utf-8')
+data = pd.read_csv("processedData.csv", encoding='utf-8')
 
 @app.route("/")
 def home():
